@@ -30,6 +30,7 @@ edu\tamu\ctv\entity\Rowtypes.class
 edu\tamu\ctv\controller\LoginController.class
 edu\tamu\ctv\utils\importdata\toxpi\Substance.class
 edu\tamu\ctv\controller\FileUploadController.class
+edu\tamu\ctv\entity\Chemicals.class
 edu\tamu\ctv\repository\SequencesRepository.class
 edu\tamu\ctv\utils\DateUtil.class
 edu\tamu\ctv\repository\ImportInfoRepository.class
@@ -70,6 +71,7 @@ edu\tamu\ctv\controller\ProjectController.class
 edu\tamu\ctv\controller\ProfileController.class
 edu\tamu\ctv\repository\ColumnTypesRepository.class
 edu\tamu\ctv\service\ColumnTypesService.class
+edu\tamu\ctv\controller\Publ2016Controller.class
 edu\tamu\ctv\service\defaultdata\InitUnitCreateService.class
 edu\tamu\ctv\service\ProjectService.class
 edu\tamu\ctv\entity\Rowtypestempl.class
@@ -103,6 +105,7 @@ edu\tamu\ctv\utils\Util.class
 edu\tamu\ctv\service\defaultdata\InitProjectTypeCreateService.class
 edu\tamu\ctv\utils\importdata\toxpi\Component.class
 edu\tamu\ctv\controller\ID_HomeController.class
+edu\tamu\ctv\repository\ChemicalsRepository.class
 edu\tamu\ctv\entity\Columntypes.class
 edu\tamu\ctv\entity\Columnheaders.class
 edu\tamu\ctv\config\security\SecurityConfig.class

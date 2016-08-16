@@ -40,6 +40,7 @@ User_id: ${user_id}
 						<button class="btn btn-primary" onclick="location.href='${updateUrl}'">Update</button>
 						<button class="btn btn-danger" onclick="this.disabled=true;post('${deleteUrl}')">Delete</button></td>
 				</tr>
+				Phone: ${user.phone}
 			</c:forEach>
 		</table>
 User[2].first_name: ${user[1].firstname}

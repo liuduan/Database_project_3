@@ -139,7 +139,7 @@ font-weight:bold;
 
 </div>
 	<button id="password-submission" style="
-  		width:130px;
+  		width:180px;
   		height:60px;
   		display:inline-block;
   		font-family:Arial;
@@ -163,9 +163,11 @@ font-weight:bold;
   		box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;">
   
   We Are Great.</button>
-	<br><br>
-
-<br>
+	<br><br>&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	
+	<a href = "Open/Publ2016"
+		target = _blank>
+		2016 Publication</a>
+<br><br>
 	<div id="introduction">
 		&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	This web site is part of the New Technologies to 
 		Underpin Category Approaches and Read-across in Regulatory Programmes at Texas A&M University.
