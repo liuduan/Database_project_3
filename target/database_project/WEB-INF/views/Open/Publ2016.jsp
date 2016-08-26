@@ -6,6 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>2016 Publication</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/database_project/scripts/css/Publ2016.css" />
+
 <style>
 table, th, td {
     border: 1px solid black;
@@ -24,16 +28,26 @@ table, th, td {
 		Back to Home Page</a>
 
 	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
+	<a href = "/database_project/Open/CrudeOil"
+		target = _blank>
+		Crude Oil Processing</a>
+
+
+
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
 	<a href = "http://pubs.rsc.org/en/content/articlelanding/2016/gc/c6gc01147k#!divAbstract"
 		target = _blank>
-		2016 Publication</a>
+		2016 Published Paper</a>
 <br><br>
 Chemicals.cas = {Chemicals.cas}
 Chemicals.cas = {chemicals.cas}
+<br>
+
+
 
 Table 1 Chemical-biological data-based grouping of petroleum substances in ToxPi
 
- <table style="width:70%">
+ <table style="width:80%">
   <tr>
     <th># </th>
     <th>Sample </th>
@@ -46,7 +60,17 @@ Table 1 Chemical-biological data-based grouping of petroleum substances in ToxPi
 
 
  
-<tr><td>1</td><td>CON-01</td><td> SRGOa </td><td>64741-43-1 </td><td>9.0 </td><td>9.0 </td><td>2.8 </td></tr>
+<tr><td>1</td>
+	
+	<td><div class="dropdown">
+  		<button class="dropbtn">CON-01</button><div class="dropdown-content">
+    		<a href="Cells?Sample=CON-01&Cells=Cardio">Cardiomyocytes</a>
+    		<a href="Cells?Sample=CON-01&Cells=Hepa">Hepatocytes</a>
+    		<a href="#">Link 3</a>
+  		</div></div></td><td> SRGOa </td>
+	<td>64741-43-1</td>
+	<td>9.0 </td><td>9.0 </td><td>2.8 </td></tr>
+
 <tr><td>2</td><td>CON-02</td><td>SRGOa</td><td>68814-87-9</td><td>8.2</td><td>9.6 </td><td>2.7</td></tr>
 <tr><td>3</td><td>CON-03</td><td>SRGOa</td><td>68814-87-9</td><td>5.9</td><td>10.1</td><td>2.1</td></tr>
 <tr><td>4</td><td>CON-04</td><td>SRGOa</td><td>68915-96-8</td><td>9.5</td><td>8.3</td><td>2.7</td></tr>
@@ -66,10 +90,75 @@ Table 1 Chemical-biological data-based grouping of petroleum substances in ToxPi
 <tr><td>18</td><td>CON-27</td><td>RAEd</td><td>91995-70-9</td><td>2.7</td><td>4.4</td><td>0.7</td></tr>
 <tr><td>19</td><td>A083/13</td><td>HFOe</td><td>68476-33-5</td><td>6.6</td><td> - </td><td>1.3</td></tr>
 <tr><td>20</td><td>A087/13</td><td>HFOe</td><td>68476-33-5</td><td>3.6</td><td> - </td><td>0.8</td></tr>
-<tr><td>21</td><td>A092/13</td><td>HFOe</td><td>68476-33-5</td><td>5.4</td><td> - </td><td>1.2</td></tr>
+<tr><td id="abcde">21</td><td>A092/13</td><td>HFOe</td><td>68476-33-5</td><td>5.4</td><td> - </td><td>1.2</td></tr>
 
 </table> 
+<div class="cas64741-43-1" onmouseover="bigImg(this)" onmouseout="normalImg(this)" ></div>
 a Straight run gas oil. b Other gas oil. c Vacuum & hydrotreated gas oil. d Residual aromatic extract. e Heavy fuel oil.
+	<script>
+	
+function bigImg(x) {
+	// alert(" : ) ");
+	$(".cas64741-43-1").css("font-size","24px");
+	$(".cas64741-43-1").css("background-color","#C4E1E1");
+    //x.style.font-size = "16px";
+    // x.style.width = "264px";
+}
+
+function normalImg(x) {
+	$(".cas64741-43-1").css("font-size","20px");
+	$(".cas64741-43-1").css("background-color","white");
+    // x.style.width = "232px";
+}
+    
+
+// alert("here");
+$(".cas64741-43-1").hover(function(e) {
+	// alert("here");
+    $("#foo").css({
+        left: e.pageX + 1,
+        top: e.pageY + 1
+        }).stop().show(100);},
+ 		// alert("here 2");}, 
+     function() {$("#foo").hide(100);}
+     );	// end of hover    
+</script>
+<div id="abcd">hello</div>
+<a class="ab" href="http://foo.com" data-tooltip="#foo" id="abc">foo</a>
+<br><br>
+<a class="ab" href="http://bar.com" data-tooltip="#bar">bar</a>
+
+<div id="foo" style = "position:absolute; background:#CCC; border: 1px solid;">
+	<a href="/database_project/Open/CrudeOil">Source;</a><br />
+	<a href="/database_project/Open/Cells">Cells</a><br>
+	</div>
+<div id="bar" style = "position:absolute; display:none; background:#CCC; border: 1px solid;">bar means bar</div>
+<br><br>
+
+
+ <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown 2</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3, <img src = "http://pic.pimg.tw/dinosaurs/4a151a51b5dc1.jpg" /></a>
+  </div>
+</div>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
 </html>

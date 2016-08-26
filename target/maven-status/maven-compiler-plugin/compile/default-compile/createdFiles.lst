@@ -1,3 +1,4 @@
+edu\tamu\ctv\controller\CellsController.class
 edu\tamu\ctv\entity\Projecttypes.class
 edu\tamu\ctv\utils\importdata\toxpi\Utility.class
 edu\tamu\ctv\utils\importdata\ImportComponent.class
@@ -26,6 +27,7 @@ edu\tamu\ctv\config\data\DataConfig.class
 edu\tamu\ctv\utils\importdata\toxpi\Utility$1.class
 edu\tamu\ctv\service\AnalysisService.class
 edu\tamu\ctv\config\WebAppInitializer.class
+edu\tamu\ctv\controller\CrudeOilController.class
 edu\tamu\ctv\entity\Rowtypes.class
 edu\tamu\ctv\controller\LoginController.class
 edu\tamu\ctv\utils\importdata\toxpi\Substance.class
@@ -105,7 +107,6 @@ edu\tamu\ctv\utils\Util.class
 edu\tamu\ctv\service\defaultdata\InitProjectTypeCreateService.class
 edu\tamu\ctv\utils\importdata\toxpi\Component.class
 edu\tamu\ctv\controller\ID_HomeController.class
-edu\tamu\ctv\repository\ChemicalsRepository.class
 edu\tamu\ctv\entity\Columntypes.class
 edu\tamu\ctv\entity\Columnheaders.class
 edu\tamu\ctv\config\security\SecurityConfig.class
